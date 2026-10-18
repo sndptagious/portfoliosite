@@ -3,20 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sandeep Shrestha's modern portfolio website showcasing IT expertise, cybersecurity knowledge, and professional experience.">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <title>Sandeep Shrestha</title>
+        <title>Sandeep Shrestha | Portfolio</title>
     </head>
     <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">SnDp</a>
-                </div>
+        <header class="site-header">
+            <nav class="nav container">
+                <a href="#home" class="brand" aria-label="Go to home section">Sn<span>Dp</span></a>
+
+                <button class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu">
+                    <i class='bx bx-menu'></i>
+                </button>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -27,181 +30,300 @@
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
             </nav>
         </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sandeep</span><br> IT Officer (6th Level)</h1>
-                    <div>
-                        <a href="path-to-cv.pdf" class="button" download>Download CV</a>
-                        <button onclick="window.location.href='tel:+9779861543834'" class="button">Call For Tech Support</button>
+        <main>
+            <section class="hero container" id="home">
+                <div class="hero__content">
+                    <p class="eyebrow">Cybersecurity &amp; IT Infrastructure Specialist</p>
+                    <h1>
+                        Hi, I&apos;m <span>Sandeep</span><br>
+                        building secure digital experiences.
+                    </h1>
+                    <p class="hero__text">
+                        I help organizations strengthen their technology foundations with smart
+                        infrastructure management, secure networking, and practical IT support.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="path-to-cv.pdf" class="button button--primary" download>Download CV</a>
+                        <a href="#contact" class="button button--secondary">Let&apos;s Talk</a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div>
+                            <strong>6+</strong>
+                            <span>Years in IT</span>
+                        </div>
+                        <div>
+                            <strong>95%</strong>
+                            <span>Networking</span>
+                        </div>
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Support Mindset</span>
+                        </div>
                     </div>
                 </div>
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/sandeep-shresthaa/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/sndptagious" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.credly.com/users/sandeep-shresthaa" class="home__social-icon">
-                        <img src="https://images.credly.com/images/c4689f29-3940-42ca-823e-340ea05dd936/blob" alt="Credly" style="width: 30px; height: 30px;">
-                      </a>
+
+                <div class="hero__visual" aria-label="Portrait of Sandeep Shrestha">
+                    <div class="portrait-card">
+                        <img src="assets/img/perfil.png" alt="Sandeep Shrestha portrait">
+                    </div>
+                    <div class="status-badge">
+                        <span class="dot"></span>
+                        Available for projects
+                    </div>
                 </div>
 
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
-                        </g>
-                    </svg>
+                <div class="socials" aria-label="Social media links">
+                    <a href="https://www.linkedin.com/in/sandeep-shresthaa/" target="_blank" rel="noreferrer" class="socials__icon" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/sndptagious" target="_blank" rel="noreferrer" class="socials__icon" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.credly.com/users/sandeep-shresthaa" target="_blank" rel="noreferrer" class="socials__icon credly" aria-label="Credly">
+                        <img src="https://images.credly.com/images/c4689f29-3940-42ca-823e-340ea05dd936/blob" alt="Credly profile">
+                    </a>
                 </div>
             </section>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
+            <section class="about section" id="about">
+                <div class="container about__grid">
+                    <div class="about__image">
+                        <img src="assets/img/about.JPG" alt="Sandeep Shrestha in professional portrait">
                     </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Sandeep Shrestha</h2>
-                        <p class="about__text">Highly skilled IT professional with a strong passion for technology and problem-solving. Experienced in managing IT infrastructure, troubleshooting technical issues, and optimizing systems in resource-constrained environments. Proficient in hardware, software, and network administration, with certifications in cybersecurity, network defense, and digital forensics. Adept at communicating complex technical concepts to diverse audiences and delivering innovative solutions under pressure. Passionate about staying updated on emerging technologies and committed to continuous learning. Outside of work, I enjoy hiking, organizing events, and exploring new tech innovations. Let’s connect and collaborate!</p>           
-                    </div>                                   
+
+                    <div class="about__content">
+                        <p class="section-kicker">About me</p>
+                        <h2>Technology problem-solver with a focus on security and reliability.</h2>
+                        <p>
+                            I&apos;m Sandeep Shrestha, an IT Officer with a strong background in managing
+                            digital infrastructure, supporting end-users, and protecting network environments.
+                            My work blends practical IT operations with a cybersecurity mindset, making sure
+                            systems stay fast, secure, and dependable.
+                        </p>
+                        <p>
+                            From troubleshooting mission-critical issues to strengthening network performance,
+                            I enjoy turning technical challenges into scalable solutions that support both
+                            people and business goals.
+                        </p>
+
+                        <div class="about__tags">
+                            <span>Network Infrastructure</span>
+                            <span>Cybersecurity</span>
+                            <span>IT Support</span>
+                            <span>System Security</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
+                <div class="container">
+                    <p class="section-kicker">Core strengths</p>
+                    <h2 class="section-title">Professional Skills</h2>
 
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">As a cybersecurity enthusiast, I specialize in the following areas:</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-network-chart skills__icon'></i>
-                                <span class="skills__name">Networking</span>
+                    <div class="skills__grid">
+                        <div class="skill-card">
+                            <div class="skill-card__top">
+                                <div class="skill-card__label">
+                                    <i class='bx bx-network-chart skill-card__icon'></i>
+                                    <span>Networking</span>
+                                </div>
+                                <strong>95%</strong>
                             </div>
-                            <div class="skills__bar skills__network">
+                            <div class="skill-card__bar"><span style="width: 95%"></span></div>
+                        </div>
 
+                        <div class="skill-card">
+                            <div class="skill-card__top">
+                                <div class="skill-card__label">
+                                    <i class='bx bx-shield skill-card__icon'></i>
+                                    <span>Cybersecurity</span>
+                                </div>
+                                <strong>85%</strong>
                             </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
+                            <div class="skill-card__bar"><span style="width: 85%"></span></div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-shield skills__icon'></i>
-                                <span class="skills__name">Cybersecurity</span>
+
+                        <div class="skill-card">
+                            <div class="skill-card__top">
+                                <div class="skill-card__label">
+                                    <i class='bx bxl-python skill-card__icon'></i>
+                                    <span>Python for Security</span>
+                                </div>
+                                <strong>65%</strong>
                             </div>
-                            <div class="skills__bar skills__cyber">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
+                            <div class="skill-card__bar"><span style="width: 65%"></span></div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-python skills__icon' ></i>
-                                <span class="skills__name">Python for Security</span>
+
+                        <div class="skill-card">
+                            <div class="skill-card__top">
+                                <div class="skill-card__label">
+                                    <i class='bx bx-target-lock skill-card__icon'></i>
+                                    <span>Penetration Testing</span>
+                                </div>
+                                <strong>40%</strong>
                             </div>
-                            <div class="skills__bar skills__python">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
+                            <div class="skill-card__bar"><span style="width: 40%"></span></div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-target-lock skills__icon'></i>
-                                <span class="skills__name">Penetration Testing</span>
-                            </div>
-                            <div class="skills__bar skills__pentration">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">40%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work1.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
-            <!--===== WORK =====-->
+            <section class="services section">
+                <div class="container">
+                    <p class="section-kicker">What I do</p>
+                    <h2 class="section-title">IT &amp; Security Services</h2>
+
+                    <div class="services__grid">
+                        <article class="service-card">
+                            <i class='bx bx-server'></i>
+                            <h3>Infrastructure Management</h3>
+                            <p>Designing and maintaining reliable system environments for smooth business operations.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <i class='bx bx-shield-quarter'></i>
+                            <h3>Cybersecurity Support</h3>
+                            <p>Strengthening network defense, monitoring risks, and improving system resilience.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <i class='bx bx-wifi'></i>
+                            <h3>Network Optimization</h3>
+                            <p>Improving network performance, connectivity, and uptime for users and teams.</p>
+                        </article>
+
+                        <article class="service-card">
+                            <i class='bx bx-support'></i>
+                            <h3>Technical Support</h3>
+                            <p>Solving user issues quickly with a practical, people-first approach to technology.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
             <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+                <div class="container">
+                    <p class="section-kicker">Selected work</p>
+                    <h2 class="section-title">Projects &amp; Experience</h2>
 
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+                    <div class="work__grid">
+                        <article class="work__card">
+                            <img src="assets/img/work1.jpg" alt="Network support project overview">
+                            <div class="work__overlay">
+                                <h3>Network Support</h3>
+                                <p>Secure infrastructure and troubleshooting for digital systems.</p>
+                            </div>
+                        </article>
+
+                        <article class="work__card">
+                            <img src="assets/img/work2.jpg" alt="System administration project overview">
+                            <div class="work__overlay">
+                                <h3>System Administration</h3>
+                                <p>Maintaining reliable services and performance across environments.</p>
+                            </div>
+                        </article>
+
+                        <article class="work__card">
+                            <img src="assets/img/work3.jpg" alt="Security operations project overview">
+                            <div class="work__overlay">
+                                <h3>Security Operations</h3>
+                                <p>Monitoring risk, securing access, and improving response readiness.</p>
+                            </div>
+                        </article>
+
+                        <article class="work__card">
+                            <img src="assets/img/work4.jpg" alt="Technical support workflow project overview">
+                            <div class="work__overlay">
+                                <h3>Technical Support</h3>
+                                <p>Delivering practical, fast-moving support to optimize daily work.</p>
+                            </div>
+                        </article>
+
+                        <article class="work__card">
+                            <img src="assets/img/work5.jpg" alt="IT modernization project overview">
+                            <div class="work__overlay">
+                                <h3>IT Modernization</h3>
+                                <p>Improving processes with better tools, systems, and guidance.</p>
+                            </div>
+                        </article>
+
+                        <article class="work__card">
+                            <img src="assets/img/work6.jpg" alt="Digital resilience project overview">
+                            <div class="work__overlay">
+                                <h3>Digital Resilience</h3>
+                                <p>Helping teams stay connected, secure, and productive.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
 
-            <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
+                <div class="container contact__grid">
+                    <div class="contact__content">
+                        <p class="section-kicker">Contact</p>
+                        <h2>Let&apos;s build resilient technology together.</h2>
+                        <p>
+                            I&apos;m open to IT support, cybersecurity, and digital modernization collaborations.
+                        </p>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                        <ul class="contact__list">
+                            <li>
+                                <i class='bx bx-phone'></i>
+                                <a href="tel:+9779861543834">+977 9861543834</a>
+                            </li>
+                            <li>
+                                <i class='bx bx-envelope'></i>
+                                <a href="mailto:sandeep.shrestha@example.com">sandeep.shrestha@example.com</a>
+                            </li>
+                            <li>
+                                <i class='bx bx-map'></i>
+                                <span>Nepal</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="contact__form" action="#" method="post">
+                        <div class="field-group">
+                            <input type="text" name="name" placeholder="Your Name" aria-label="Your Name">
+                        </div>
+                        <div class="field-group">
+                            <input type="email" name="email" placeholder="Your Email" aria-label="Your Email">
+                        </div>
+                        <div class="field-group">
+                            <textarea name="message" rows="6" placeholder="Your Message" aria-label="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="button button--primary">Send Message</button>
                     </form>
                 </div>
             </section>
         </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Get in Touch</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/sndp.tagiouss" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/sndp.tagious/?next=%2F" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://x.com/sandip1shrestha" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        <footer class="site-footer">
+            <div class="container footer__inner">
+                <p class="footer__title">Get in Touch</p>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/sndp.tagiouss" target="_blank" rel="noreferrer" aria-label="Facebook">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://www.instagram.com/sndp.tagious/?next=%2F" target="_blank" rel="noreferrer" aria-label="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="https://x.com/sandip1shrestha" target="_blank" rel="noreferrer" aria-label="X / Twitter">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+                <p class="footer__copy">&copy; 2025 Sandeep Shrestha. All rights reserved.</p>
             </div>
-            <p class="footer__copy">&#169;All rigths reserved</p>
         </footer>
 
-
-        <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>
 </html>
